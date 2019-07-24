@@ -13,7 +13,7 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 import cv2
-plt.figure(num=None, figsize=(10, 5), dpi=100.45, facecolor=(0.7490, 0.7490, 0.7490), edgecolor='k')
+fig = plt.figure(num=None, figsize=(10, 5), dpi=100.45, facecolor=(0.7490, 0.7490, 0.7490), edgecolor='k')
 
 
 
@@ -58,6 +58,7 @@ img_preto_branco = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Titulo #######################################################
 
 plt.suptitle('Histograma de Imagens')
+fig.canvas.set_window_title(nome_img.rsplit('/', 1)[-1])
 
 
 
