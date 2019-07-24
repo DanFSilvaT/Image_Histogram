@@ -58,7 +58,7 @@ img_preto_branco = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Titulo #######################################################
 
 plt.suptitle('Histograma de Imagens')
-fig.canvas.set_window_title(nome_img.rsplit('/', 1)[-1])
+fig.canvas.set_window_title(nome_img.replace('\\', '/').rsplit('/', 1)[-1])
 
 
 
